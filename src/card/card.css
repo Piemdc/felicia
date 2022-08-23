@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* { margin: 0; padding: 0; font-size: 18px; font-family: 'Space Grotesk', sans-serif; font-weight: 500;}
+
+
+.main{
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    border-radius: 10px;
+    border: solid 1px hsl(270, 3%, 87%);
+    padding: 0.5em;
+}
+
+input::placeholder{
+    color: hsl(270, 3%, 87%);
+}
+
+.cardPreviewBox{
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+}
+
+.cardBox{
+    background: url("../images/bg-main-mobile.png");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    width: 100%;
+
+}
+
+
+
+.backCard,.frontCard{
+    width: 270px;
+    color: white;
+    height: 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.backCard{
+    background: url("../images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: end;
+    position: relative;
+    left: 2em;
+    top: 2.7em;
+}
+
+.cvcBox{
+    height: 1em;
+    margin-right: 3.5em;
+    margin-bottom: 0.6em;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.frontCard{
+    background: url("../images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    bottom: 1em;
+    right: 2em;
+
+}
+
+.frontCard>div{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 85%;
+    width: 85%;
+
+}
+
+.cardLogoBox{
+    width: 100%;
+}
+.cardLogoBox>img{
+    width: 25%;
+}
+.cardNumber{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.cardName,.cardExp{
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+/*///////////////////////////FORM///////////////////////////*/
+
+
+.cardInput{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin:0.5em 0;
+}
+
+label>p{
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.expcvc{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expcvc>*{
+    max-width: 45%;
+}
+
+
+.expInput{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.expInput>p{
+    width: 100%;
+}
+.expInput>input{
+    width: 32%;
+}
+
+
